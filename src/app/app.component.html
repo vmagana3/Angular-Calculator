@@ -2,13 +2,16 @@
 
 <form action="">
   <label>Numero 1</label>
-  <input type="text"  [(ngModel)]="primerNumero" name="primeroNumero">
+  <input type="number"  [(ngModel)]="primerNumero" name="primeroNumero">
   <label>Numero 2</label>
-  <input type="text" [(ngModel)]="segundoNumero" name="segundoNumero">
-  <input type="submit" (click)="sumar()">
+  <input type="number" [(ngModel)]="segundoNumero" name="segundoNumero">
+
+  <input type="submit" (click)="sumar()" value="Sumar">
+
+  <input type="submit" (click)="restar()" value="Restar">
 </form>
 
 <p></p>
 
 
-<p>{{resultado}}</p>
+<p>Resultado: {{resultado}}</p>

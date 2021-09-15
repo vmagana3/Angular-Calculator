@@ -15,12 +15,15 @@ export class AppComponent {
   segundoNumero: number = 0;
   resultado: number = 0;
 
-  //Methods//
-  sumar(): void{
-    console.log("Primer Numero:" +  typeof(this.primerNumero));
-    console.log("Segundo Numero:" + typeof(this.segundoNumero));
-    console.log(parseInt(this.primerNumero) + parseInt(this.segundoNumero));
 
+  //Methods//
+  sumar(): void{  
+    this.resultado = this.primerNumero + this.segundoNumero;
+
+  }
+
+  restar(): void{  
+    this.resultado = this.primerNumero - this.segundoNumero;
   }
 
 }
